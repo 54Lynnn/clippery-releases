@@ -11,7 +11,7 @@ Clippery 是一个 Windows 本地剪贴板历史快捷面板：按 `Ctrl+Alt+V` 
 进入 [Releases](https://github.com/54Lynnn/clippery-releases/releases/latest)，下载：
 
 ```text
-Clippery-Setup-1.2.7.exe
+Clippery-Setup-1.2.8.exe
 ```
 
 可选下载 `SHA256SUMS.txt` 校验安装包。
@@ -25,7 +25,7 @@ Clippery-Setup-1.2.7.exe
 
 ## 安装
 
-1. 下载 `Clippery-Setup-1.2.7.exe`
+1. 下载 `Clippery-Setup-1.2.8.exe`
 2. 双击运行
 3. 接受许可协议
 4. 选择安装目录（默认 `%LOCALAPPDATA%\Programs\Clippery`）
@@ -35,12 +35,14 @@ Clippery-Setup-1.2.7.exe
 
 安装是每用户的，不需要管理员权限。历史数据默认在 `%LOCALAPPDATA%\Clippery`。
 
+如果 Clippery 正在运行，交互安装会提示关闭它；静默安装会自动结束 Clippery 后继续。覆盖安装不会删除历史和设置。
+
 ## 校验安装包
 
 PowerShell：
 
 ```powershell
-Get-FileHash .\Clippery-Setup-1.2.7.exe -Algorithm SHA256
+Get-FileHash .\Clippery-Setup-1.2.8.exe -Algorithm SHA256
 ```
 
 与 `SHA256SUMS.txt` 中的值比较。
