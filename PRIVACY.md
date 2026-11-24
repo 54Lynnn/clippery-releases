@@ -1,7 +1,7 @@
 # Clippery 隐私说明 / Privacy Notice
 
-**生效日期 / Effective date**　2026-11-23
-**适用版本 / Version**　Clippery 1.2.4 及后续本地版本
+**生效日期 / Effective date**　2026-11-24
+**适用版本 / Version**　Clippery 1.2.11 及后续本地版本
 **适用客户端 / App**　Windows 桌面客户端（`Clippery.Windows.exe`）
 
 ## 一、中文说明
@@ -123,6 +123,8 @@ AI 功能默认关闭，且新安装不预置任何厂商端点、模型或 Key�
 ### 13. 第三方
 
 Clippery 使用 .NET 10 Desktop Runtime、Microsoft.Data.Sqlite/SQLitePCLRaw、Windows OCR/WinRT 等组件。第三方许可证和版权声明见 `THIRD-PARTY-NOTICES.md` 和安装目录中的 `THIRD-PARTY-NOTICES.TXT`。这些组件不会改变上述“默认不上传”的行为；可选的 AI 请求只发往你配置的端点。
+
+**更新检查 / Update check**：手动点击“检查更新”，或启用“自动检查更新”时，Clippery 会请求 GitHub 的公开接口 `https://api.github.com/repos/54Lynnn/clippery-releases/releases/latest`，读取最新版本号、发布说明和安装包信息。请求不包含剪贴板内容、历史记录、API Key 或账号信息；GitHub 可能看到你的 IP 地址和标准 HTTP 请求头。自动检查默认开启、每天最多一次，可在设置中关闭。Clippery 不会在后台静默下载或安装更新。
 
 ### 14. 变更与联系
 
@@ -249,6 +251,8 @@ The Software is not directed to children under 14. Children under 14 must use it
 ### 13. Third parties
 
 Clippery uses the .NET 10 Desktop Runtime, Microsoft.Data.Sqlite/SQLitePCLRaw, Windows OCR/WinRT, and other components. Third-party licenses and copyright notices are in `THIRD-PARTY-NOTICES.md` and `THIRD-PARTY-NOTICES.TXT` in the installation directory. These components do not change the “no upload by default” behavior; optional AI requests go only to the endpoint you configure.
+
+**Update check:** When you click “Check for updates,” or when “Check for updates automatically” is enabled, Clippery requests GitHub’s public endpoint `https://api.github.com/repos/54Lynnn/clippery-releases/releases/latest` to read the latest version, release notes, and installer metadata. The request does not include clipboard content, history, API keys, or account information; GitHub may see your IP address and standard HTTP headers. Automatic checks are enabled by default, run at most once a day, and can be disabled in Settings. Clippery does not silently download or install updates in the background.
 
 ### 14. Changes and contact
 
