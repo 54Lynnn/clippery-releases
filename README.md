@@ -1,5 +1,7 @@
 # Clippery Downloads
 
+[![License: Proprietary](https://img.shields.io/badge/License-Proprietary-red.svg)](LICENSE)
+
 Clippery 是一个 Windows 本地剪贴板历史快捷面板：按 `Ctrl+Alt+V` 打开，用中文找回最近的文本、图片和图文记录，并可以写回剪贴板或直接粘贴到刚才的应用。
 
 这个仓库**只用于发布安装包和发布说明**。Clippery 的应用源码是私有的，不在此仓库中。
@@ -9,21 +11,21 @@ Clippery 是一个 Windows 本地剪贴板历史快捷面板：按 `Ctrl+Alt+V` 
 进入 [Releases](https://github.com/54Lynnn/clippery-releases/releases/latest)，下载：
 
 ```text
-Clippery-Setup-1.2.4.exe
+Clippery-Setup-1.2.7.exe
 ```
 
 可选下载 `SHA256SUMS.txt` 校验安装包。
 
 ## 系统要求
 
-- Windows 11 x64（已实机验证）
+- Windows 11 x64（已运行验证）
 - Windows 10 21H2 LTSC/Enterprise / Windows 11 x64
 - 安装包是 self-contained，已包含 .NET 10 Desktop Runtime，**不需要另装 .NET**
 - Windows 10 Home/Pro 已停止微软支持，未验证，不承诺可用
 
 ## 安装
 
-1. 下载 `Clippery-Setup-1.2.4.exe`
+1. 下载 `Clippery-Setup-1.2.7.exe`
 2. 双击运行
 3. 接受许可协议
 4. 选择安装目录（默认 `%LOCALAPPDATA%\Programs\Clippery`）
@@ -38,7 +40,7 @@ Clippery-Setup-1.2.4.exe
 PowerShell：
 
 ```powershell
-Get-FileHash .\Clippery-Setup-1.2.4.exe -Algorithm SHA256
+Get-FileHash .\Clippery-Setup-1.2.7.exe -Algorithm SHA256
 ```
 
 与 `SHA256SUMS.txt` 中的值比较。
@@ -64,9 +66,10 @@ Get-FileHash .\Clippery-Setup-1.2.4.exe -Algorithm SHA256
 - [最终用户许可协议](LICENSE)
 - [第三方组件与许可证](THIRD-PARTY-NOTICES.md)
 
-客户端采用专有许可：可免费用于个人、非商业用途；商业使用、云同步、预设模型和 Token 服务需要单独的书面授权或服务条款。
+客户端采用专有许可：可免费用于个人、非商业用途；商业使用、云同步、预设模型和 Token 服务需要单独的书面授权或服务条款。许可证全文和法律主体信息见 [LICENSE](LICENSE)。
 
-开发者：深圳市罗湖区莲塘街道哈吉米科技工作室（个体工商户）  
+开发者：54Lynnn  
+项目主页：https://github.com/54Lynnn/clippery-releases  
 联系：1120166455@qq.com
 
 ## 更新
