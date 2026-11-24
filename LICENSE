@@ -1,0 +1,187 @@
+Clippery 最终用户许可协议 / Clippery End User License Agreement
+
+Copyright (c) 2026 深圳市罗湖区莲塘街道哈吉米科技工作室（个体工商户）. All rights reserved.
+
+许可方 / Licensor:
+  深圳市罗湖区莲塘街道哈吉米科技工作室（个体工商户）
+  统一社会信用代码 / Unified Social Credit Code: 92440300MAKQBHW82F
+  经营者 / Operator: 刘嘉俊
+  联系邮箱 / Contact: 1120166455@qq.com
+
+语言与效力：本协议以中文和英文发布。在中国大陆，中文版本为准；其他地区，英文版本为准。
+Language and precedence: This EULA is published in Chinese and English. The Chinese version
+prevails in mainland China; the English version prevails elsewhere.
+
+============================================================
+第一部分：中文条款
+============================================================
+
+1. 协议双方与范围
+本协议是你与上述许可方之间关于 Clippery 桌面应用及其更新、文档和随附文件（合称“软件”）的法律协议。安装或使用软件即表示你接受本协议；如不接受，请勿安装或使用。
+
+2. 免费个人许可
+在遵守本协议的前提下，许可方授予你一项有限的、非独占的、不可转让的、可撤销的、免许可费的许可，允许你在自己拥有或控制的设备上安装和使用软件，仅用于个人、非商业目的。本协议不转让软件或任何知识产权的所有权。
+
+3. 商业使用
+“商业使用”指为或代表公司、企业、组织或其他实体使用软件，或为商业利益、金钱报酬使用软件。个人在雇主提供的设备上仅处理个人、非商业事务，不视为商业使用；用于雇主业务、客户交付或收费服务则需要商业许可。商业许可的价格和条款请通过 1120166455@qq.com 联系许可方。本协议不授予任何付费服务、云同步、预设模型、Token 包或其他在线服务的权利；这些服务适用单独条款和费用。
+
+4. 限制
+你不得：
+(a) 复制、修改、改编、翻译软件或创作衍生作品；
+(b) 分发、发布、再许可、出租、出借、出售、转售或以其他方式向第三方提供软件；
+(c) 反向工程、反编译、反汇编或试图获取源代码，但适用法律明确允许的除外；
+(d) 删除、修改或遮蔽软件中的版权、商标或其他所有权声明；
+(e) 规避或试图规避软件中的许可、使用或技术限制；
+(f) 使用软件开发、训练或改进竞争性产品或服务；
+(g) 违反适用法律或第三方权利使用软件。
+未经许可方书面同意，你不得将软件或付费服务用于高风险用途（如医疗诊断、生命支持、航空、核设施、执法或信用决策）。
+
+5. 数据与第三方服务
+你保留对通过软件处理的剪贴板内容和其他数据的所有权。软件按 PRIVACY.md 的说明在本机存储数据。你负责自己的备份，以及你配置的任何第三方端点、账号或 API Key。如果你启用可选 AI 功能，你与第三方服务提供方之间的使用受该提供方条款和隐私政策约束；许可方不对第三方服务负责。你声明并保证，你有权处理你发送给第三方服务的任何内容。
+
+6. 更新与协议变更
+许可方可以（但没有义务）提供更新。更新可能适用本协议或更新时提供的附加条款。许可方可以在新版本中更新本协议；重大变更会通过发布说明或应用内提示告知。变更生效后继续使用即表示接受；变更不追溯适用于已经发生的争议。免费版不承诺持续支持、维护或更新。
+
+7. 第三方组件
+软件包含或使用受其自身许可证约束的第三方组件，详见 THIRD-PARTY-NOTICES.md。对于相应组件，其许可证优先于本协议。软件随附的 .NET 运行时第三方声明见安装目录中的 THIRD-PARTY-NOTICES.TXT。
+
+8. 隐私
+软件的数据实践见 PRIVACY.md。软件不包含遥测、分析或崩溃上报。可选 AI 功能只在你配置端点并授予相应授权后，向你选择的端点发送数据。敏感内容检测是启发式，不能保证识别所有秘密；图片内容尤其可能无法被自动检测。
+
+9. 免责
+软件按“现状”和“可用”提供，不附带任何明示或暗示的保证，包括但不限于适销性、特定用途适用性、所有权和不侵权保证。许可方不保证软件不中断、无错误，也不保证 AI 或 OCR 输出准确。你自行承担使用软件的风险。
+
+10. 责任限制
+在适用法律允许的最大范围内，许可方不对任何间接、附带、特殊、后果性或惩罚性损害，或任何数据、利润、业务损失承担责任，即使许可方已被告知此类损害的可能性。对于消费者因许可方违约造成的数据丢失，许可方的总责任不超过以下两者中的较高者：(a) 你在索赔前 12 个月内为软件支付的费用；(b) 人民币 100 元。本协议不排除或限制因故意、重大过失、欺诈、人身伤害，或适用法律不得限制的责任。部分司法辖区不允许某些排除或限制，因此上述部分内容可能不适用于你。
+
+11. 期限与终止
+本协议自你安装或使用软件时生效，直至终止。如果你重大违反本协议，许可方将给你 30 天书面补救期；若你在补救期内未纠正，许可方可终止本协议。对于违法使用、侵权、规避技术限制或危害安全的行为，许可方可立即终止。终止后，你必须停止使用并删除软件副本；第 3 至 12 条在终止后继续有效。终止不影响你依法享有的数据权利。
+
+12. 适用法律与争议
+本协议适用中华人民共和国法律（不含冲突法规则）。因本协议产生的争议，双方应协商解决；协商不成的，提交深圳市罗湖区有管辖权的人民法院诉讼解决。消费者依法享有的强制保护不受影响；如消费者住所地法律强制要求，消费者可在其住所地有管辖权的法院提起诉讼。
+
+13. 其他
+本协议不授予任何商标、名称或标识许可。未满 14 周岁的儿童应在监护人同意下使用；软件不面向 14 周岁以下儿童。你应遵守适用的出口管制和制裁法律。如果管理员以静默方式部署软件，部署方代表其用户接受本协议。本协议与 PRIVACY.md、THIRD-PARTY-NOTICES.md 构成关于软件的完整协议；如果任何条款被认定不可执行，其余条款继续有效；未执行某条款不构成放弃。你不得转让本协议；许可方可随合并、收购或资产出售转让本协议。
+
+14. 联系
+商业许可、隐私或安全问题请联系：1120166455@qq.com。
+
+============================================================
+Part B: English terms
+============================================================
+
+1. Parties and scope
+This EULA is a legal agreement between you and the Licensor identified above for the
+Clippery desktop application, including updates, documentation, and accompanying files
+(the "Software"). By installing or using the Software, you agree to this EULA. If you do
+not agree, do not install or use the Software.
+
+2. Free personal license
+Subject to this EULA, the Licensor grants you a limited, non-exclusive, non-transferable,
+revocable, royalty-free license to install and use the Software on devices you own or
+control, solely for personal, non-commercial purposes. This EULA does not transfer
+ownership of the Software or any intellectual property rights.
+
+3. Commercial use
+"Commercial use" means use by or on behalf of a company, business, organization, or other
+entity, or use for commercial advantage or monetary compensation. A person using the
+Software on an employer-provided device solely for personal, non-commercial tasks is not
+engaged in commercial use; use for the employer's business, client delivery, or a paid
+service requires a commercial license. For commercial licensing terms, contact
+1120166455@qq.com. This EULA grants no rights to paid services, cloud synchronization,
+preset models, token packages, or other online services; those are governed by separate
+terms and fees.
+
+4. Restrictions
+You may not:
+(a) copy, modify, adapt, translate, or create derivative works of the Software;
+(b) distribute, publish, sublicense, rent, lease, lend, sell, resell, or otherwise make
+    the Software available to any third party;
+(c) reverse engineer, decompile, disassemble, or attempt to derive the source code,
+    except to the extent expressly permitted by applicable law;
+(d) remove, alter, or obscure any copyright, trademark, or proprietary notice;
+(e) circumvent or attempt to circumvent any license, usage, or technical limitation;
+(f) use the Software to develop, train, or improve a competing product or service;
+(g) use the Software in violation of applicable law or the rights of others.
+You may not use the Software or any paid service for high-risk uses (such as medical
+diagnosis, life support, aviation, nuclear facilities, law enforcement, or credit
+decisions) without the Licensor's prior written consent.
+
+5. Data and third-party services
+You retain ownership of clipboard content and other data processed with the Software. The
+Software stores data locally as described in PRIVACY.md. You are responsible for your own
+backups and for any third-party endpoint, account, or API key that you configure. If you
+enable optional AI features, your use of a third-party service is governed by that
+provider's terms and privacy policy; the Licensor is not responsible for third-party
+services. You represent and warrant that you have the rights and consents needed to
+process any content you send to a third-party service.
+
+6. Updates and changes
+The Licensor may, but is not required to, provide updates. Updates may be governed by this
+EULA or by additional terms presented with the update. The Licensor may update this EULA
+with a new release; material changes will be identified in release notes or in-app. Your
+continued use after the effective date constitutes acceptance; changes do not apply
+retroactively to disputes that already arose. The free version carries no commitment of
+support, maintenance, or updates.
+
+7. Third-party components
+The Software includes or uses third-party components governed by their own licenses. See
+THIRD-PARTY-NOTICES.md. Those licenses prevail over this EULA for the corresponding
+components. The .NET runtime third-party notices are included as
+THIRD-PARTY-NOTICES.TXT in the installation directory.
+
+8. Privacy
+The Software's data practices are described in PRIVACY.md. The Software contains no
+telemetry, analytics, or crash reporting. Optional AI features send data only to the
+endpoint you configure and only after you grant the applicable authorization. Sensitive
+content detection is heuristic and cannot guarantee that every secret is detected; image
+content in particular may not be detected automatically.
+
+9. No warranty
+THE SOFTWARE IS PROVIDED "AS IS" AND "AS AVAILABLE", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. THE LICENSOR DOES NOT
+WARRANT THAT THE SOFTWARE WILL BE UNINTERRUPTED, ERROR-FREE, OR THAT AI OR OCR OUTPUT WILL
+BE ACCURATE. YOU USE THE SOFTWARE AT YOUR OWN RISK.
+
+10. Limitation of liability
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE LICENSOR SHALL NOT BE LIABLE FOR
+ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR FOR ANY LOSS OF
+DATA, PROFITS, OR BUSINESS, ARISING OUT OF OR RELATED TO THE SOFTWARE OR THIS EULA, EVEN
+IF THE LICENSOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. FOR CONSUMERS, THE
+LICENSOR'S TOTAL LIABILITY FOR LOSS OF DATA CAUSED BY THE LICENSOR'S BREACH SHALL NOT
+EXCEED THE GREATER OF (A) THE FEES YOU PAID FOR THE SOFTWARE DURING THE TWELVE MONTHS
+PRECEDING THE CLAIM AND (B) CNY 100. NOTHING IN THIS EULA EXCLUDES OR LIMITS LIABILITY
+FOR WILFUL MISCONDUCT, GROSS NEGLIGENCE, FRAUD, DEATH OR PERSONAL INJURY, OR ANY OTHER
+LIABILITY THAT CANNOT BE LIMITED BY LAW. SOME JURISDICTIONS DO NOT ALLOW CERTAIN
+EXCLUSIONS OR LIMITATIONS, SO SOME OF THE ABOVE MAY NOT APPLY TO YOU.
+
+11. Term and termination
+This EULA begins when you install or use the Software and continues until terminated. If
+you materially breach this EULA, the Licensor will give you 30 days' written notice to
+cure; if you fail to cure, the Licensor may terminate. The Licensor may terminate
+immediately for unlawful use, infringement, circumvention of technical measures, or harm
+to security. On termination, you must stop using the Software and delete copies; Sections
+3 through 12 survive. Termination does not affect your data rights under applicable law.
+
+12. Governing law and disputes
+This EULA is governed by the laws of the People's Republic of China, excluding its
+conflict-of-laws rules. Disputes shall be resolved through good-faith consultation; if
+consultation fails, the courts with jurisdiction in Luohu District, Shenzhen, shall have
+jurisdiction. Mandatory consumer protections are not affected; if the law of a consumer's
+habitual residence requires it, the consumer may bring proceedings in a court with
+jurisdiction there.
+
+13. General
+No trademark, name, or logo license is granted. Children under 14 must use the Software
+with guardian consent; the Software is not directed to children under 14. You must comply
+with applicable export-control and sanctions laws. If an administrator deploys the
+Software silently, the deploying entity accepts this EULA on behalf of its users. This
+EULA, together with PRIVACY.md and THIRD-PARTY-NOTICES.md, is the entire agreement
+regarding the Software. If any provision is held unenforceable, the remaining provisions
+remain in effect. Failure to enforce a provision is not a waiver. You may not assign this
+EULA; the Licensor may assign it in connection with a merger, acquisition, or sale of
+assets.
+
+14. Contact
+For commercial licensing, privacy, or security questions: 1120166455@qq.com.
