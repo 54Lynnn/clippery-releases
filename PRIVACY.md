@@ -21,7 +21,7 @@
 
 - 没有遥测、使用统计、行为分析或崩溃上报。
 - 没有广告 SDK。
-- 没有自动更新检查；关于页的“检查更新”只显示本地提示，不发起网络请求。
+- 更新检查只访问 GitHub Releases 读取版本信息，不发送剪贴板内容、图片、搜索词或 API Key；自动检查可在设置中关闭。
 - 当前版本没有 Clippery 服务器，开发者不会收到你的剪贴板历史、图片、搜索词或 API Key。
 - 不下载网页里的远程图片；只保存剪贴板实际提供的文字、HTML、本地图片、`data:` 图片或位图。
 - 我们不出售你的个人信息。
@@ -59,14 +59,14 @@ AI 功能默认关闭，且新安装不预置任何厂商端点、模型或 Key�
 可能发送给**你配置的端点**的数据：
 
 - 文本索引：可被 AI 检索且非敏感的文本或 HTML 纯文本；
-- 图片理解：你逐条确认允许的含图片条目所对应的压缩图片（data URL）、可选的同条正文上下文，以及生成描述/OCR 的提示词；
+- 图片理解：你逐条确认允许的含图片条目，或开启“自动为新图片生成 AI 标题和描述”后新复制的非敏感图片，所对应的压缩图片（data URL）、可选的同条正文上下文，以及生成描述/OCR 的提示词；
 - AI 搜索：你按回车执行语义搜索时的查询词。
 
 边界：
 
 - 远程端点必须使用 HTTPS；只有本机回环地址允许 HTTP。
 - 文本敏感条目不会发送；每条历史还有独立的“可被 AI 检索”标记。
-- 含图片的条目不会自动加入 AI 索引；你需要在历史卡片上逐条允许并确认。图片可能包含密码、银行信息或其他敏感内容，确认前请自行判断。
+- 含图片的条目默认不会自动加入 AI 索引；你需要在历史卡片上逐条允许并确认，或在设置/托盘中主动开启“自动图片理解”。开启后，新复制的非敏感图片会自动上传到图片理解服务一次；图片可能包含密码、银行信息或其他敏感内容，开启前请自行判断。
 - 图片上传授权与文本授权分开；取消图片授权后不会上传图片。
 - 你可以随时清除 AI 描述/向量；关键词搜索和本地历史不受影响。
 - 你配置的 AI 服务提供方可能按其自身条款记录、保留、训练或处理请求数据；这不属于 Clippery 的控制范围，也不代表 Clippery 的立场。请阅读该服务方的隐私政策。
@@ -149,7 +149,7 @@ The current version has no Clippery-operated account system, cloud synchronizati
 
 - No telemetry, usage statistics, behavioral analytics, or crash reporting.
 - No advertising SDK.
-- No automatic update check; the “Check for updates” button only shows a local message and makes no network request.
+- Update checks contact GitHub Releases for version information and do not send clipboard content, images, search queries, or API keys. Automatic checks can be disabled in Settings.
 - The current version has no Clippery server. The developer does not receive your clipboard history, images, search queries, or API keys.
 - We do not download remote images from web pages; we store only text, HTML, local images, `data:` images, or bitmaps actually provided by the clipboard.
 - We do not sell your personal information.
@@ -187,14 +187,14 @@ AI features are off by default, and a new installation contains no vendor endpoi
 Data that may be sent to **the endpoint you configure**:
 
 - Text indexing: AI-searchable, non-sensitive text or plain text extracted from HTML;
-- Image understanding: compressed images (data URLs) for image-bearing entries you individually approve, optional text context from the same entry, and the prompts used to generate descriptions/OCR;
+- Image understanding: compressed images (data URLs) for image-bearing entries you individually approve, or for newly copied non-sensitive images when “Automatically generate AI titles and descriptions for new images” is enabled, optional text context from the same entry, and the prompts used to generate descriptions/OCR;
 - AI search: the query text you submit by pressing Enter with AI search enabled.
 
 Boundaries:
 
 - Remote endpoints must use HTTPS; HTTP is allowed only for loopback addresses.
 - Text entries marked sensitive are not sent; each history entry also has its own “AI-searchable” flag.
-- Image-bearing entries are not added to the AI index automatically; you must allow and confirm them individually on the history card. Images may contain passwords, banking information, or other sensitive content; assess them before confirming.
+- Image-bearing entries are not added to the AI index automatically by default; you must allow and confirm them individually on the history card, or explicitly enable “Automatic image understanding” in Settings or the tray. When enabled, newly copied non-sensitive images are uploaded to the image-understanding service once. Images may contain passwords, banking information, or other sensitive content; assess them before enabling.
 - Image-upload consent is separate from text consent; disabling image consent stops image uploads.
 - You can clear AI descriptions/vectors at any time; keyword search and local history are unaffected.
 - The AI provider you configure may log, retain, train on, or otherwise process request data under its own terms. That is outside Clippery's control and does not represent Clippery's position. Read the provider's privacy policy.
