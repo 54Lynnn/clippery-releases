@@ -23,3 +23,7 @@
 ```text
 98F3F766AD0200CF8FDCAE3F6DE7FA41ECB10790E769DBCDE061443A2B23B768  Clippery-Setup-1.2.16.exe
 ```
+
+## Detached signature
+
+Use `RELEASE-SIGNING-KEY.asc` to verify `RELEASE-MANIFEST.json.asc` before trusting the manifest.
