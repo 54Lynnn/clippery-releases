@@ -80,4 +80,4 @@ Get-FileHash .\Clippery-Setup-1.2.16.exe -Algorithm SHA256
 
 ## Release integrity
 
-Use `SHA256SUMS.txt` and `RELEASE-MANIFEST.json` to verify the downloaded installer. Report security issues privately using `SECURITY.md`; do not post clipboard content or API keys in public issues.
+Use `SHA256SUMS.txt`, `RELEASE-MANIFEST.json`, `RELEASE-MANIFEST.json.asc`, and `RELEASE-SIGNING-KEY.asc` to verify the downloaded installer. Report security issues privately using `SECURITY.md`; do not post clipboard content or API keys in public issues.
