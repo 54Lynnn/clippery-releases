@@ -1,7 +1,7 @@
 # Clippery 隐私说明 / Privacy Notice
 
-**生效日期 / Effective date**　2026-11-24
-**适用版本 / Version**　Clippery 1.2.11 及后续本地版本
+**生效日期 / Effective date**　2026-11-26
+**适用版本 / Version**　Clippery 1.2.15 及后续本地版本
 **适用客户端 / App**　Windows 桌面客户端（`Clippery.Windows.exe`）
 
 ## 一、中文说明
@@ -19,7 +19,7 @@
 
 ### 2. 我们不收集什么
 
-- 没有遥测、使用统计、行为分析或崩溃上报。
+- 没有遥测、云端使用统计、行为分析或崩溃上报。设置中的使用统计只保存在本机。
 - 没有广告 SDK。
 - 更新检查只访问 GitHub Releases 读取版本信息，不发送剪贴板内容、图片、搜索词或 API Key；自动检查可在设置中关闭。
 - 当前版本没有 Clippery 服务器，开发者不会收到你的剪贴板历史、图片、搜索词或 API Key。
@@ -32,7 +32,7 @@
 
 | 路径 | 内容 |
 |---|---|
-| `history.db` | 文本、HTML、RTF、时间、置顶/敏感标记、图片索引、关键词索引、OCR 文本、AI 图片描述和 AI 向量 |
+| `history.db` | 文本、HTML、RTF、时间、置顶/敏感标记、图片索引、关键词索引、OCR 文本、AI 图片描述和 AI 向量，以及本机使用统计 |
 | `blobs\` | 去重后的图片文件（PNG） |
 | `clipboard-cache\` | 写回剪贴板时临时引用的 PNG，成功写回后按机会式清理 |
 | `settings.json` | 记录开关、快捷键、开机启动、界面/OCR 语言、AI 端点/模型/授权状态、隐私同意版本；**不包含 API Key** |
@@ -59,16 +59,17 @@ AI 功能默认关闭，且新安装不预置任何厂商端点、模型或 Key�
 可能发送给**你配置的端点**的数据：
 
 - 文本索引：可被 AI 检索且非敏感的文本或 HTML 纯文本；
-- 图片理解：你逐条确认允许的含图片条目，或开启“自动为新图片生成 AI 标题和描述”后新复制的非敏感图片，所对应的压缩图片（data URL）、可选的同条正文上下文，以及生成描述/OCR 的提示词；
+- 图片理解：你逐条确认允许的含图片条目，或开启“自动为新图片生成 AI 标题和描述”后新复制的图片，所对应的压缩图片（data URL）和生成描述/OCR 的提示词；只有同时启用文本 AI 授权时，混合条目的正文才会作为可选上下文发送；
 - AI 搜索：你按回车执行语义搜索时的查询词。
 
 边界：
 
 - 远程端点必须使用 HTTPS；只有本机回环地址允许 HTTP。
 - 文本敏感条目不会发送；每条历史还有独立的“可被 AI 检索”标记。
-- 含图片的条目默认不会自动加入 AI 索引；你需要在历史卡片上逐条允许并确认，或在设置/托盘中主动开启“自动图片理解”。开启后，新复制的非敏感图片会自动上传到图片理解服务一次；图片可能包含密码、银行信息或其他敏感内容，开启前请自行判断。
+- 含图片的条目默认不会自动加入 AI 索引；你需要在历史卡片上逐条允许并确认，或在设置/托盘中主动开启“自动图片理解”。开启后，新复制的图片会自动上传到图片理解服务一次；文本规则不会识别纯图片中的秘密，图片可能包含密码、银行信息或其他敏感内容，开启前请自行判断。已经允许且正在排队的条目可能继续完成。
 - 图片上传授权与文本授权分开；取消图片授权后不会上传图片。
 - 你可以随时清除 AI 描述/向量；关键词搜索和本地历史不受影响。
+- 使用统计只保存在本机。历史复制数量可以从已有记录回算，过去的 AI Token 用量无法恢复。Token 数量以服务返回的 usage 为准，部分兼容服务可能不提供。设置中的“清空统计”不会删除历史、图片、AI 描述或向量。
 - 你配置的 AI 服务提供方可能按其自身条款记录、保留、训练或处理请求数据；这不属于 Clippery 的控制范围，也不代表 Clippery 的立场。请阅读该服务方的隐私政策。
 - 如果你配置的端点位于你所在国家/地区之外，数据可能发生跨境传输；该传输由你选择的服务方处理，请自行评估并取得必要授权。
 - API Key 只保存在 Windows 凭据管理器：`Clippery/AiEmbeddingApiKey` 和 `Clippery/AiVisionApiKey`。它不会写入 `settings.json`、`app.log` 或错误消息。
@@ -143,7 +144,7 @@ The Software is developed and provided by:
 - **Operator**: 刘嘉俊
 - **Privacy and security contact**: 1120166455@qq.com
 
-The current version has no Clippery-operated account system, cloud synchronization, telemetry, or advertising service. Your clipboard history is stored locally by default. The app contacts a third-party endpoint only when you configure and authorize optional AI features.
+The current version has no Clippery-operated account system, cloud synchronization, telemetry, or advertising service. Your clipboard history and usage statistics are stored locally by default. The app contacts a third-party endpoint only when you configure and authorize optional AI features.
 
 ### 2. What we do not collect
 
@@ -160,7 +161,7 @@ Default data directory: `%LOCALAPPDATA%\Clippery`. The `CLIPPERY_DATA_DIR` envir
 
 | Path | Content |
 |---|---|
-| `history.db` | Text, HTML, RTF, timestamps, pinned/sensitive flags, image index, keyword index, OCR text, AI image descriptions, and AI vectors |
+| `history.db` | Text, HTML, RTF, timestamps, pinned/sensitive flags, image index, keyword index, OCR text, AI image descriptions, AI vectors, and local usage statistics |
 | `blobs\` | Deduplicated image files (PNG) |
 | `clipboard-cache\` | Temporary PNGs referenced when writing back to the clipboard; cleaned opportunistically after successful writes |
 | `settings.json` | Recording toggle, hotkey, startup, UI/OCR language, AI endpoint/model/authorization flags, privacy consent version; **no API keys** |
@@ -187,16 +188,17 @@ AI features are off by default, and a new installation contains no vendor endpoi
 Data that may be sent to **the endpoint you configure**:
 
 - Text indexing: AI-searchable, non-sensitive text or plain text extracted from HTML;
-- Image understanding: compressed images (data URLs) for image-bearing entries you individually approve, or for newly copied non-sensitive images when “Automatically generate AI titles and descriptions for new images” is enabled, optional text context from the same entry, and the prompts used to generate descriptions/OCR;
+- Image understanding: compressed images (data URLs) for image-bearing entries you individually approve, or for newly copied images when “Automatically generate AI titles and descriptions for new images” is enabled, plus the prompts used to generate descriptions/OCR. Text from a mixed entry is sent as optional context only when text AI authorization is also enabled;
 - AI search: the query text you submit by pressing Enter with AI search enabled.
 
 Boundaries:
 
 - Remote endpoints must use HTTPS; HTTP is allowed only for loopback addresses.
 - Text entries marked sensitive are not sent; each history entry also has its own “AI-searchable” flag.
-- Image-bearing entries are not added to the AI index automatically by default; you must allow and confirm them individually on the history card, or explicitly enable “Automatic image understanding” in Settings or the tray. When enabled, newly copied non-sensitive images are uploaded to the image-understanding service once. Images may contain passwords, banking information, or other sensitive content; assess them before enabling.
+- Image-bearing entries are not added to the AI index automatically by default; you must allow and confirm them individually on the history card, or explicitly enable “Automatic image understanding” in Settings or the tray. When enabled, newly copied images are uploaded to the image-understanding service once. Text rules do not detect secrets inside image-only entries; images may contain passwords, banking information, or other sensitive content. Already-approved pending entries may continue.
 - Image-upload consent is separate from text consent; disabling image consent stops image uploads.
 - You can clear AI descriptions/vectors at any time; keyword search and local history are unaffected.
+- Usage statistics stay on this machine. Historical copy counts can be backfilled, but past AI token usage cannot be recovered. Token counts come from the provider's usage response and may be unavailable for some compatible services. The “Clear statistics” action does not delete history, images, AI descriptions, or vectors.
 - The AI provider you configure may log, retain, train on, or otherwise process request data under its own terms. That is outside Clippery's control and does not represent Clippery's position. Read the provider's privacy policy.
 - If your endpoint is outside your country/region, data may be transferred across borders; that transfer is handled by the provider you choose. Assess it and obtain any required authorization.
 - API keys are stored only in Windows Credential Manager: `Clippery/AiEmbeddingApiKey` and `Clippery/AiVisionApiKey`. They are never written to `settings.json`, `app.log`, or error messages.

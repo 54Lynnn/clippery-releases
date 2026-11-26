@@ -1,7 +1,7 @@
 # Clippery 第三方组件与许可证
 
-**适用版本**　Clippery 1.2.12
-**更新日期**　2026-11-25
+**适用版本**　Clippery 1.2.15
+**更新日期**　2026-11-26
 
 Clippery 的 Windows 安装包包含自包含的 .NET 运行时和若干第三方组件。本文件列出随应用分发或用于构建/测试的主要组件及其许可证。各组件的版权归其各自作者所有；本文件不改变这些许可证的条款。
 
@@ -12,8 +12,8 @@ Clippery 的 Windows 安装包包含自包含的 .NET 运行时和若干第三�
 | .NET 10 Desktop Runtime（`Microsoft.NETCore.App` / `Microsoft.WindowsDesktop.App`） | 10.0.15 | MIT | Copyright (c) .NET Foundation and Contributors；https://github.com/dotnet/runtime |
 | WPF / WinForms | .NET 10 | MIT | Copyright (c) .NET Foundation and Contributors；https://github.com/dotnet/wpf |
 | Microsoft.Data.Sqlite / Microsoft.Data.Sqlite.Core | 10.0.4 | MIT | Copyright (c) .NET Foundation and Contributors；https://github.com/dotnet/efcore |
-| SQLitePCLRaw.core / bundle_e_sqlite3 / provider_e_sqlite3 / lib.e_sqlite3 | 2.1.11 | Apache-2.0 | Copyright (c) Eric Sink and contributors；https://github.com/ericsink/SQLitePCL.raw |
-| SQLite（由 SQLitePCLRaw 带入的原生库） | 3.x | Public Domain | https://www.sqlite.org/copyright.html |
+| SQLitePCLRaw.core / provider_e_sqlite3 | 2.1.11 | Apache-2.0 | Managed ABI/provider used by Clippery；Copyright (c) Eric Sink and contributors；https://github.com/ericsink/SQLitePCL.raw |
+| SQLite（发布包使用官方 Windows x64 `sqlite3.dll`，重命名为 `e_sqlite3.dll`） | 3.54.1 | Public Domain | https://www.sqlite.org/copyright.html；官方包 SHA-3-256：`c2d09c8babb9399277055c057c97a53f1ffd7c5f11d0c1f2118ffdfa39f2daa4` |
 | System.Drawing.Common | 10.0.4 | MIT | Copyright (c) .NET Foundation and Contributors；https://github.com/dotnet/winforms |
 | Microsoft.Windows.SDK.NET.Ref（C#/WinRT 投影） | 10.0.19041.57 | Microsoft Windows SDK License | https://aka.ms/WinSDKLicenseURL |
 | Windows API / WinRT / Windows.Media.Ocr | Windows 10/11 | Microsoft 软件许可条款 | 操作系统组件，随 Windows 提供 |
@@ -30,6 +30,7 @@ https://github.com/dotnet/runtime/blob/main/THIRD-PARTY-NOTICES.TXT
 | xunit.runner.visualstudio | 3.1.4 | Apache-2.0 | 测试运行器；Copyright (c) .NET Foundation and Contributors |
 | Microsoft.NET.Test.Sdk | 17.14.1 | MIT | 测试 SDK；Copyright (c) Microsoft Corporation |
 | coverlet.collector | 6.0.4 | MIT | 覆盖率收集器；Copyright (c) 2018 Toni Solarin-Sodara and contributors |
+| SQLitePCLRaw.lib.e_sqlite3 | 2.1.11 | Apache-2.0 | 仅用于自动化测试，不随最终安装包分发 |
 
 这些组件不会安装到最终用户的 Clippery 安装目录。
 
