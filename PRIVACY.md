@@ -1,7 +1,7 @@
 # Clippery 隐私说明 / Privacy Notice
 
 **生效日期 / Effective date**　2026-11-26
-**适用版本 / Version**　Clippery 1.2.15 及后续本地版本
+**适用版本 / Version**　Clippery 1.2.16 及后续版本
 **适用客户端 / App**　Windows 桌面客户端（`Clippery.Windows.exe`）
 
 ## 一、中文说明
@@ -44,7 +44,7 @@
 
 ### 4. 剪贴板采集
 
-- 首次安装默认开启采集；首次运行会显示隐私摘要并要求确认。你可以随时在设置或托盘菜单暂停。
+- 首次运行在你确认隐私说明前不会采集；确认后默认开启记录。你可以随时在设置或托盘菜单暂停。
 - 尊重 Windows 剪贴板隐私格式：`ExcludeClipboardContentFromMonitorProcessing`、`Clipboard Viewer Ignore`、`CanIncludeInClipboardHistory=0`、`CanUploadToCloudClipboard=0` 存在时整条跳过。
 - “从不记录这些应用”名单按前台进程名做尽力而为的过滤；剪贴板隐私格式仍是主要保证。
 - 文本敏感检测由本机规则执行（常见 Key/token 前缀、私钥、JWT、密码字段、高熵字符串等）。命中后标记为敏感，跳过 AI 索引和本机 OCR；你可以在本地手动取消/恢复标记。
@@ -173,7 +173,7 @@ These local files are **not encrypted** by default. They are protected by Window
 
 ### 4. Clipboard capture
 
-- Recording is enabled by default after installation; the first run shows a privacy summary and asks for confirmation. You can pause recording at any time in Settings or the tray menu.
+- The app does not capture clipboard content before you confirm the privacy notice on first run; recording is enabled by default after confirmation. You can pause recording at any time in Settings or the tray menu.
 - The app respects Windows clipboard privacy formats: `ExcludeClipboardContentFromMonitorProcessing`, `Clipboard Viewer Ignore`, `CanIncludeInClipboardHistory=0`, and `CanUploadToCloudClipboard=0` cause the entire item to be skipped.
 - The “never record these apps” list matches foreground process names on a best-effort basis; clipboard privacy formats remain the primary guarantee.
 - Sensitive-content detection runs locally using rules for common key/token prefixes, private keys, JWTs, password fields, and high-entropy strings. Matches are marked sensitive and skipped by AI indexing and local OCR; you can manually remove or restore the flag locally.
