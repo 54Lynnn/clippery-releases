@@ -10,4 +10,4 @@
 
 ## Release integrity
 
-公开安装包发布在 [clippery-releases](https://github.com/54Lynnn/clippery-releases)。下载后请使用同一 Release 中的 `SHA256SUMS.txt` 和 `RELEASE-MANIFEST.json` 校验文件名、版本和 SHA-256。当前安装包未做 Authenticode 签名，Windows SmartScreen 的未知发布者提示是预期行为。
+公开安装包发布在 [clippery-releases](https://github.com/54Lynnn/clippery-releases)。下载后请使用同一 Release 中的 `SHA256SUMS.txt` 和 `RELEASE-MANIFEST.json` 校验文件名、版本和 SHA-256，并使用仓库中的 `RELEASE-SIGNING-KEY.asc` 验证 `RELEASE-MANIFEST.json.asc`。当前安装包未做 Authenticode 签名，Windows SmartScreen 的未知发布者提示是预期行为。
