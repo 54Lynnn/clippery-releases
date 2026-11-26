@@ -11,7 +11,7 @@ Clippery 是一个 Windows 本地剪贴板历史快捷面板：按 `Ctrl+Alt+V` 
 进入 [Releases](https://github.com/54Lynnn/clippery-releases/releases/latest)，下载：
 
 ```text
-Clippery-Setup-1.2.15.exe
+Clippery-Setup-1.2.16.exe
 ```
 
 可选下载 `SHA256SUMS.txt` 校验安装包。
@@ -25,7 +25,7 @@ Clippery-Setup-1.2.15.exe
 
 ## 安装
 
-1. 下载 `Clippery-Setup-1.2.15.exe`
+1. 下载 `Clippery-Setup-1.2.16.exe`
 2. 双击运行
 3. 接受许可协议
 4. 选择安装目录（默认 `%LOCALAPPDATA%\Programs\Clippery`）
@@ -42,7 +42,7 @@ Clippery-Setup-1.2.15.exe
 PowerShell：
 
 ```powershell
-Get-FileHash .\Clippery-Setup-1.2.15.exe -Algorithm SHA256
+Get-FileHash .\Clippery-Setup-1.2.16.exe -Algorithm SHA256
 ```
 
 与 `SHA256SUMS.txt` 中的值比较。
@@ -77,3 +77,7 @@ Get-FileHash .\Clippery-Setup-1.2.15.exe -Algorithm SHA256
 ## 更新
 
 当前只检测新版本，不自动下载或安装。新版本会发布在本仓库 Releases；检测到更新后可在设置页打开发布页，手动下载新安装包覆盖安装。
+
+## Release integrity
+
+Use `SHA256SUMS.txt` and `RELEASE-MANIFEST.json` to verify the downloaded installer. Report security issues privately using `SECURITY.md`; do not post clipboard content or API keys in public issues.

@@ -1,0 +1,12 @@
+{
+  "version": "1.2.16",
+  "sourceCommit": "20a646349aca08baec67cc994f1c44a97276d30b",
+  "productVersion": "1.2.16+20a646349aca08baec67cc994f1c44a97276d30b",
+  "installer": "Clippery-Setup-1.2.16.exe",
+  "sizeBytes": 58624998,
+  "sha256": "98F3F766AD0200CF8FDCAE3F6DE7FA41ECB10790E769DBCDE061443A2B23B768",
+  "runtimeVersion": "10.0.15",
+  "sqliteVersion": "3.54.1",
+  "sqliteFts5": true,
+  "codeSigned": false
+}
